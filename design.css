@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300&family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
+:root {
+    --palette1: #EBF1FF;
+    --palette2: #A0BCBE;
+    --palette3: #22283C;
+    --palette4: #4F6471;
+    --palette5: #C2CED3;
+    --palette6: #E6F0EF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Kanit', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navigation, .navigation{
+    width: 100%;
+    float: left;
+}
+
+.navigations{
+    height: 3%;
+}
+
+.navigations ul,.navigation ul{
+    margin: 30px 40px 0 0;
+    float: right;
+}
+
+.navigations li,.navigation li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+}
+
+.navigations a,.navigation a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+.btnactive:hover, .btn:hover{
+    color: red;
+    border-top: 1px solid red;
+}
+
+.btnactive{
+    color: red!important;
+}
+
+.indexdash{
+    height: 100%;
+    background-image: url(gambar/wallpaper%20winter.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.indexname {
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    text-align: center;
+}
+
+.indexdash h1{
+    color: white;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.indexdash p{
+    width: auto;
+    color: white;
+    font-size: 0.8em;
+    text-align: center;  
+    
+}
+
+.indexdash span{   
+    background: rgba(0,0,0,0.3);
+    padding: 3px;
+}
+
+.indexgallery{
+    height: 70%;
+    background-image: url(gambar/background%20landscape.jpg);
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.indexgallery h1{
+    padding-top: 15%; 
+    color: white;
+    font-weight: 100;
+}
+
+.indexgallery p{color: white;}
+
+.indexbio, .indexexp, .indexedu, .indexfam{
+    height: 50%;
+    width: 100%;
+}
+
+.indexbio1, .indexexp1, .indexedu1, .indexfam1{
+    margin: 9% 0;
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.indexbio1 h1, .indexbio1 h1, .indexexp1 h1{
+    color: black;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.indexedu1 h1, .indexfam1 h1{
+    color: white;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.indexedu1 p, .indexfam1 p{
+    color: white;
+}
+
+.indexbio1 button, .indexexp button, .indexedu button, .indexfam button, .indexgallery button{
+    border: none;
+    color: white;
+    margin-top: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.indexbio1 button{background-color: #a2e48b;} 
+.indexexp button{background-color: var(--palette3);}
+.indexedu button{background-color: var(--palette5);} 
+.indexfam button{background-color: var(--palette2);}
+.indexgallery button{background-color: var(--palette4);}
+
+.indexbio2{background-image: url(gambar/biodatamint.jpg);}
+.indexexp2{background-image: url(gambar/ferris%20wheel.jpg);}
+.indexedu2{background-image: url(gambar/book.jpg);}
+.indexfam2{background-image: url(gambar/fam.jpg);}
+
+.indexbio2, .indexexp2, .indexedu2, .indexfam2{
+    height: 100%;
+    width: 70%;
+    float: left;
+    background-size: cover;
+}
+
+.indexbio{background-color: var(--palette1);}
+.indexexp{background-color: var(--palette2);} 
+.indexedu{background-color: var(--palette3);} 
+.indexfam{background-color: var(--palette4);}
+
+.biodata{
+    width: 100%;
+}
+
+.picture{
+    margin-top: 2%;
+    width: 60%;
+    height: 75%;
+    overflow: hidden;
+    float: left;
+    background-color: var(--palette6);
+}
+
+.picture img {
+    display: block;
+	width: 100%;
+	clip-path: polygon(0% 0%,100% 0%,78% 100.00%,0% 100%);
+}
+
+.info{
+    margin-top: 2%;
+    background-color: var(--palette6);
+    width: 40%;
+    height: 75%;
+    float: left;
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);
+    padding: 5% 0 0 20px;
+}
+
+.namebio{
+    font-weight: 100;
+}
+
+.info p {
+    margin-top: 30px;
+    width: 70%;
+}
+
+.info audio{
+    margin-top: 50px;
+}
+
+.experience{
+    background-color: var(--palette1);
+}
+
+.exp{
+    width: 100%;
+}
+
+.myexp{
+    width: 80%;
+    margin: 10% auto;
+    padding: 2% 4%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.myexp table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.imgtable{
+    width: 80%;
+    overflow: hidden;
+    margin: 10% auto;
+}
+
+.myexp h1{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.myexp p{
+    text-align: center;
+}
+
+.education1{
+    width: 100%;
+}
+
+.edusrc{
+    margin-top: 2%;
+    width: 60%;
+    height: 75%;
+    overflow: hidden;
+    float: left;
+    background-color: var(--palette6);
+}
+
+.edusrc video{
+    display: block;
+	clip-path: polygon(0 0, 74% 0, 60% 100%, 0% 100%);
+}
+
+.edusrc img{
+    display: block;
+	clip-path: polygon(0 0, 59% 0, 40% 100%, 0% 100%);
+}
+
+
+.eduinfo1{
+    margin-top: 2%;
+    background-color: var(--palette6);
+    width: 40%;
+    height: 75%;
+    float: left;
+    padding: 5% 0 0 20px;
+}
+
+.edutitle1{
+    font-weight: 100;
+}
+
+.eduinfo1 p {
+    margin-top: 30px;
+    width: 70%;
+}
+
+.edudiv{
+    width: 100%;
+    text-align: center;
+    padding:55% 0 8% 0;
+}
+
+.edudiv h1{
+    font-weight: 100;
+    margin: 10px 0 20px 0;
+}
+
+.edudiv p{
+    width: 60%;
+    margin: auto;
+}
+
+.family{
+    background-image: url(gambar/soft.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titlefam{
+    height: 100%;
+}
+
+.titlefam h1{
+    font-family: 'Oooh Baby', cursive;
+    position: absolute;
+    left: 150;
+    bottom: 120;
+}
+
+.fam{
+    padding: 0 15%;
+}
+
+.fam1{
+    background-color: var(--palette1);
+    width: 35%;
+    height: 70%;
+    float: left;
+    margin: 5% 7.5%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.fam2{
+    background-color: var(--palette1);
+    width: 35%;
+    height: 70%;
+    float: left;
+    margin: 5% 7.5%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.fam2 img{
+    width: 230px;
+}
+
+.fampic{
+    overflow: hidden;
+    height: 40%;
+    width: 100%;
+}
+
+.fampic img{
+    width: 450px;
+}
+
+.famdesc{
+    margin: 5%;
+    text-align: justify;
+}
+
+.famdesc h1{
+    font-weight: 100;
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.famdesc p{
+    font-size: 0.9em;
+}
+
+.gallery{
+    background-color: var(--palette5);
+}
+
+.gallery h1{
+    padding-top: 8%;
+    text-align: center;
+    font-weight: 100;
+}
+
+.imagegallery {
+    padding: 2% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagegallery img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+.imgframe {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+}
+
+.descgallery {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparentbox {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.imgframe:hover img { 
+    transform: scale(1.1);
+}
+
+.imgframe:hover .transparentbox {
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.imgframe:hover .descgallery {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.imgframe:hover {
+    cursor: pointer;
+}
+
+.descgallery > p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.galleryopacity {
+    opacity: 0.5;
+}
